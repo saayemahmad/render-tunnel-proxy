@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: render-tunnel-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: TUNNEL_TOKEN
+        sync: false
