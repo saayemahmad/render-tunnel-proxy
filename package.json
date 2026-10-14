@@ -1,17 +1,10 @@
-
 {
-  "name": "render-tunnel-proxy",
+  "name": "render-cloudflared-bridge",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "dependencies": {
-    "express": "^5.1.0",
-    "http-proxy": "^1.18.1"
-  }
+  "description": "Render-hosted reverse proxy for a local Cloudflare Quick Tunnel",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "http-proxy": "^1.18.1" }
 }
